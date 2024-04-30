@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    /*background-image: url("https://images5.alphacoders.com/777/777106.png")*/
+
+}
+                                    /*Marco*/
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 620px;
+    background: black;
+    box-shadow: 0 0 50px indianred;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+                                /*Contenido 1*/
+.form-altausuario {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+                /* ESTO ES PARA LA FUNCION DE DESLIZAR CON JS*/
+
+.wrapper.active .form-altausuario.sign-in{
+    transform: translateY(-580px);
+}
+
+.wrapper .form-altausuario.sign-up {
+    position: absolute;
+    top: 582px;
+    left: 0;
+}
+
+.wrapper.active .form-altausuario.sign-up{
+    transform: translateY(-580px);
+}
+                            /*Titulos*/
+h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+                            /*INPUTS TEXTOS*/
+.grupo-input {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+
+.grupo-input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s; /* hacer transicion hacia arriba de 0.5s */
+}
+                        /* recuadro de texto*/
+.grupo-input input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+                                /*transicion hacia arriba inputs*/
+.grupo-input input:focus~label,
+.grupo-input input:valid~label {
+    top: -5px;
+
+}
+
+                                /*boton mostrar contraseña*/
+.grupo-input button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+}
+
+
+
+
+
+                                /*Checkbox*/
+.condicions {
+    margin: -5px 0 15px 5px;
+}
+
+.condicions label {
+    color: white;
+    font-size: 14px;
+}
+
+.condicions input {
+    accent-color: indianred;
+}
+                                /*Boton de enviar*/
+
+.boton-login {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: indianred;
+    box-shadow: 0 0 10px indianred;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+}
+                            /*Siguiente formulario*/
+.signUp-link {
+   font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signUp-link p {
+    color: white;
+}
+
+.signUp-link p a {
+    color: indianred;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signUp-link p a:hover {
+    text-decoration: underline;
+}
+
+                    /*Textos segundo formulario*/
+
+.texto-2 {
+    color: white;
+    font-size: 17px;
+    margin: 15px 0 15px 5px;
+}
+
+

@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+/* BANNER */
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner{
+    width: 100%;
+    height: 65vh;
+    background-image: url("imagenes pagina principal/airforce-banner.jpg");
+    background-size: cover;
+    background-position: 69%;
+    border-radius: 10px;
+    position: fixed;
+    margin-top: 28px;
+}
+.texto-banner{
+    padding-top: 100px;
+    margin-left: 50px;
+    color: aliceblue;
+}
+.texto-banner h2{
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.texto-banner h1{
+    margin-left: 5px;
+    font-size: 100px;
+}
+#boton-banner{
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    color: indianred;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#boton-banner:hover{
+    background-color: indianred;
+    color: #bbbbbb;
+}
+
+/* NAV menu de navegacion */
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    width: 50px;
+}
+
+
+.menu_links{
+    list-style: none;
+}
+.menu_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.menu_links li a{
+    transition: all 0.3s ease 0s;
+}
+.menu_links li a:hover{
+    color: indianred;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: indianred;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: transparent;
+    color: red;
+
+}
+
+
+
+/* TIENDA PRINCIPAL */
+
+.TITULO_PAG{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    margin: 20px;
+
+}
+
+.temas{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.articulos{
+    margin: auto;
+    position: relative;
+}
+
+.articulos:hover h3{
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.articulos h3{ /*sobreponer el texto en la imagen*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 200px 0 0 0;
+    font: 20px/30px Montserrat;
+    color: white;
+}
+.imagenes_art{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/* PIE DE PAGINA */
+
+.contenido{
+    padding-bottom: 5.5rem;
+}
+
+.div_foot{
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 50px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+
+
+
+/* TEXTO NOSOTROS */
+
+.box-nosotros{
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    padding: 100px;
+    margin: auto;
+}
+
+.texto-nosotros{
+    align-content: center;
+}
+
+.texto-nosotros p{
+    text-align: justify;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*FORMULARIO*/
+
+.contact_form{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.contact_form .casillas input{
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: indianred;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contact_form .casillas textarea{
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: indianred;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+.contact_form .casillas label{
+    display: block;
+}
+
+
+.contact_form button{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+
+.contact_form  h1{
+    font-size: 39px;
+    text-align: left;
+    padding-bottom: 20px;
+    color: indianred;
+}
+
+
+.contact_form h3{
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+.Estudios{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.Estudios input{
+    accent-color: indianred;
+}
+
+.separacion{
+    padding: 10px;
+}
+
+
+
+/* CONTENT 1 y 2 */
+
+.contenido{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.mostrador {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.mostrador .fila .item:hover{
+    background-color: #e6e6e6;
+}
+
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mostrador .fila .item{
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.item:hover h3{
+    display: block;
+    transition: .8s;
+}
+
+.item h3{ /*sobreponer el texto en la imagen*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 130px 0 0 0;
+    font: 20px/30px Montserrat;
+    color: white;
+    border-radius: 5px;
+}
+
+/*PRODUCTO*/
+
+.detalles-producto{
+    max-width: 1200px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    min-height: 100vh;
+}
+
+.imagen-producto{
+    background-color: #e3e3e3;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mySwiper{ /* IMAGENES QUE SE MUEVEN */
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: center;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: indianred !important;
+}
+
+
+.texto-producto{
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 60px;
+}
+
+.texto-producto .categoria-producto{
+    color: #5e5e5e;
+    font-size: 0.9rem;
+}
+.texto-producto h3{
+    color: #252525;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.texto-producto .precio-producto{
+    font-size: 1.6rem;
+    color: #252525;
+    font-weight: 500;
+}
+
+.texto-producto p{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #5e5e5e;
+    margin: 30px 0;
+}
+
+.contenedor-talla-producto strong{
+    color: #252525;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #252525;
+}
+
+.talla-producto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.talla-producto label{
+    font-size: 1.1rem;
+    background-color: #f7f7f7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+.t-checkbox:checked + .t-label{
+    background-color: #1f2124;
+    color: #ffffff;
+}
+.t-checkbox{
+    display: none;
+}
+
+.comprar-boton{
+    padding-top: 20px;
+}
+
+
+
+/* TABLAS */
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 50px auto;
+
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.titulo-tabla{
+    background-color: darkgrey;
+}
+
+.contenedor-tablas{
+
+    padding-bottom: 100px;
+}

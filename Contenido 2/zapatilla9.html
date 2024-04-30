@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ZAPATILLA RUNFALCON 3.0</title>
+  <link rel="stylesheet" href="../Pagina%20principal/CSS_index.css"/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+<header>
+    <!--<a class="logo" href="../Pagina%20principal/index.html"><img class="logo" src="../IMAGENES/logo.jpg" alt="logo"></a>-->
+    <nav>
+        <ul class="menu_links">
+            <li><a href="../TIENDA/tienda.html">Pagina principal</a></li>
+            <li><a href="../Contenido%201/content1.html">Sudaderas</a></li>
+            <li><a href="../Contenido%202/content2.html">Calzado</a></li>
+            <li><a href="../Formulario/formulario.html">Sorteos</a></li>
+            <li><a href="../contacto/nosotros.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <a class="usuario" href="../Login/InicioSesion.html"><button>Iniciar Sesion</button></a>
+</header>
+
+<section class="pagina-producto">
+
+    <div class="detalles-producto">
+
+
+        <div class="imagen-producto">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+
+                    <!-- imagen 1 -->
+                    <div class="swiper-slide">
+                        <img src="IMAGENES%20misma%20resolucion/runfalcon%20mujer.png" alt="">
+                    </div>
+
+                    <!-- imagen 2 -->
+                    <div class="swiper-slide">
+                        <img src="IMAGENES%20misma%20resolucion/runfalcon%20mujer%202.png" alt="">
+                    </div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+
+            </div>
+            
+        </div>
+
+        <div class="texto-producto">
+
+            <span class="categoria-producto">Mujer - running</span>
+
+            <h3> ADIDAS RUNFALCON 3.0</h3>
+
+            <span class="precio-producto">60,00€</span>
+
+            <p>Ponte esta versátil zapatilla de running adidas para correr en el parque y después tomar un café con tus amigos. Su mediasuela Cloudfoam te ofrece una pisada cómoda nada más ponértela. Presenta un empeine textil cómodo y transpirable y una suela de goma que proporciona un excelente agarre.
+                <br><br>
+                El empeine contiene al menos un 50% de materiales reciclados. Su objetivo es plantear otra solución más que ayude a acabar con los residuos plásticos.
+            </p>
+
+            <div class="contenedor-talla-producto">
+
+                <strong>Selecciona Talla:-</strong>
+
+                <div class="talla-producto">
+
+                    <input type="radio" class="t-checkbox" id="35" name="t">
+                    <label for="35" class="t-label">35</label>
+
+                    <input type="radio" class="t-checkbox" id="35.5" name="t">
+                    <label for="35.5" class="t-label">35.5</label>
+
+                    <input type="radio" class="t-checkbox" id="36" name="t">
+                    <label for="36" class="t-label">36</label>
+
+                    <input type="radio" class="t-checkbox" id="36.5" name="t">
+                    <label for="36.5" class="t-label">36.5</label>
+
+                    <input type="radio" class="t-checkbox" id="37" name="t">
+                    <label for="37" class="t-label">37</label>
+
+                    <input type="radio" class="t-checkbox" id="37.5" name="t">
+                    <label for="37.5" class="t-label">37.5</label>
+
+                    <input type="radio" class="t-checkbox" id="38" name="t">
+                    <label for="38" class="t-label">38</label>
+
+                    <input type="radio" class="t-checkbox" id="38.5" name="t">
+                    <label for="38.5" class="t-label">38.5</label>
+
+                    <input type="radio" class="t-checkbox" id="39" name="t">
+                    <label for="39" class="t-label">39</label>
+
+                    <input type="radio" class="t-checkbox" id="39.5" name="t">
+                    <label for="39.5" class="t-label">39.5</label>
+
+                    <input type="radio" class="t-checkbox" id="40" name="t">
+                    <label for="40" class="t-label">40</label>
+
+                    <input type="radio" class="t-checkbox" id="40.5" name="t">
+                    <label for="40.5" class="t-label">40.5</label>
+
+                    <input type="radio" class="t-checkbox" id="41" name="t">
+                    <label for="41" class="t-label">41</label>
+
+                    <input type="radio" class="t-checkbox" id="41.5" name="t">
+                    <label for="41.5" class="t-label">41.5</label>
+
+                    <input type="radio" class="t-checkbox" id="42" name="t">
+                    <label for="42" class="t-label">42</label>
+
+                    <input type="radio" class="t-checkbox" id="42.5" name="t">
+                    <label for="42.5" class="t-label">42.5</label>
+
+                    <input type="radio" class="t-checkbox" id="43" name="t">
+                    <label for="43" class="t-label">43</label>
+
+
+                </div>
+
+            </div>
+
+            <div class="comprar-boton">
+                <button> COMPRAR AHORA </button>
+            </div>
+
+            <br><br>
+
+            <div class="tallas">
+                <a href="../Tablas/tablas-zapatos.html"> <span>Tabla de tallas AQUI!</span> </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

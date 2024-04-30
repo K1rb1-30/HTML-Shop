@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike Sportswear Tech Fleece Windrunner</title>
+  <link rel="stylesheet" href="../Pagina%20principal/CSS_index.css"/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+<header>
+    <!--<a class="logo" href="../Pagina%20principal/index.html"><img class="logo" src="../IMAGENES/logo.jpg" alt="logo"></a>-->
+    <nav>
+        <ul class="menu_links">
+            <li><a href="../TIENDA/tienda.html">Pagina principal</a></li>
+            <li><a href="../Contenido%201/content1.html">Sudaderas</a></li>
+            <li><a href="../Contenido%202/content2.html">Calzado</a></li>
+            <li><a href="../Formulario/formulario.html">Sorteos</a></li>
+            <li><a href="../contacto/nosotros.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <a class="usuario" href="../Login/InicioSesion.html"><button>Iniciar Sesion</button></a>
+</header>
+
+<section class="pagina-producto">
+
+    <div class="detalles-producto">
+
+
+        <div class="imagen-producto">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- imagen 1 -->
+                    <div class="swiper-slide">
+                        <img src="imagenes%20sudaderas/nike%207%20hombre.png" alt="">
+                    </div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+
+            </div>
+            
+        </div>
+
+        <div class="texto-producto">
+
+            <span class="categoria-producto">Hombre</span>
+
+            <h3>Nike Sportswear Tech Fleece Windrunner</h3>
+
+            <span class="precio-producto">119,99€</span>
+
+            <p>Con una combinación de dos de nuestros looks más icónicos, esta sudadera con capucha y cremallera completa está inspirada en nuestra atemporal chaqueta Windrunner y en la chaqueta Tech Fleece. Diseño holgado en los hombros, el pecho y el cuerpo para ofrecer un ajuste deportivo que puedes combinar con otras prendas. Nuestro tejido Fleece premium tiene un tacto agradable en ambos lados y ofrece más suavidad y calidez que nunca, además de una confección ligera.
+            </p>
+
+            <div class="contenedor-talla-producto">
+
+                <strong>Selecciona Talla:-</strong>
+
+                <div class="talla-producto">
+
+                    <input type="radio" class="t-checkbox" id="35" name="t">
+                    <label for="35" class="t-label">XS</label>
+
+                    <input type="radio" class="t-checkbox" id="35.5" name="t">
+                    <label for="35.5" class="t-label">S</label>
+
+                    <input type="radio" class="t-checkbox" id="36" name="t">
+                    <label for="36" class="t-label">M</label>
+
+                    <input type="radio" class="t-checkbox" id="36.5" name="t">
+                    <label for="36.5" class="t-label">L</label>
+
+                    <input type="radio" class="t-checkbox" id="37" name="t">
+                    <label for="37" class="t-label">XL</label>
+
+                    <input type="radio" class="t-checkbox" id="37.5" name="t">
+                    <label for="37.5" class="t-label">XXL</label>
+
+
+                </div>
+
+            </div>
+
+            <div class="comprar-boton">
+                <button> COMPRAR AHORA </button>
+            </div>
+
+            <br><br>
+
+            <div class="tallas">
+                <a href="../Tablas/tablas.html"> <span>Tabla de tallas AQUI!</span> </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
